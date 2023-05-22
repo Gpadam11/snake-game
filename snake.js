@@ -229,29 +229,28 @@
         }
     }
 
+   //for snake to move in the direction of the swipe
     function touchMove(event) {
-        if (gameStarted && !gamePaused) {
-            var touchX = event.touches[0].clientX;
-            var touchY = event.touches[0].clientY;
-            var deltaX = touchX - snakeX;
-            var deltaY = touchY - snakeY;
+        var touch = event.touches[0];
+        var swipeX = touch.pageX - gameCanvas.offsetLeft;
+        var swipeY = touch.pageY - gameCanvas.offsetTop;
 
-            if (Math.abs(deltaX) > Math.abs(deltaY)) {
-                if (deltaX > 0) {
-                    snakeXSpeed = 1;
-                    snakeYSpeed = 0;
-                } else {
-                    snakeXSpeed = -1;
-                    snakeYSpeed = 0;
-                }
+        if (swipeX > swipeY) {
+            if (swipeX > 0) {
+                snakeXSpeed = 1;
+                snakeYSpeed = 0;
             } else {
-                if (deltaY > 0) {
-                    snakeXSpeed = 0;
-                    snakeYSpeed = 1;
-                } else {
-                    snakeXSpeed = 0;
-                    snakeYSpeed = -1;
-                }
+                snakeXSpeed = -1;
+                snakeYSpeed = 0;
+            }
+        } else {
+            if (swipeY > 0) {
+                snakeXSpeed = 0;
+                snakeYSpeed = 1;
+            } else {
+
+                snakeXSpeed = 0;
+                snakeYSpeed = -1;
             }
         }
     }
