@@ -1,0 +1,138 @@
+/* styling the snake game */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #191b1a;
+}
+
+/* footer */
+
+footer {
+    margin-top: 9%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* styling the container */
+
+.container {
+    text-align: center;
+    /* color: #2ec7e9;
+    font-family: 'Indie Flower', cursive; */
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 0 #232931;
+    margin-top: 2%;
+    margin-bottom: 1%;  
+
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+}
+
+/* styling the snake */
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: goldenrod;
+}
+
+
+/* styling the food */
+
+.food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+}
+
+
+/* styling the score */
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* styling the game over message */
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    z-index: 100;
+    display: none;
+}
+
+
+/* styling the buttons */
+
+button {
+    background-color: #4ECCA3;
+    border: none;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* for centre allign */
+    display:flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* styling the high score */
+
+#high-score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px;
+    z-index: 100;
+    display: none;
+}
+
+
+/* styling the game title */
+
+#game-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    z-index: 100;
+    display: none;
+}
+
+
+
+
+
